@@ -1,0 +1,10 @@
+tplink_router_user                    : username
+tplink_router_pass_md5                : e5acd34333e3dae3c772d1dbaf23c92c
+tplink_router_base64_user_passmd5     : ZTVhY2QzNDMzM2UzZGFlM2M3NzJkMWRiYWYyM2M5MmM=
+tplink_router_cookie_content_for_send : Authorization=Basic%ZTVhY2QzNDMzM2UzZGFlM2M3NzJkMWRiYWYyM2M5MmM%3D
+
+# Trying to connect : http://192.168.x.x/
+# Requesting  login : http://192.168.x.x/userRpm/LoginRpm.htm?Save=Save
+# URL's dynamic key : ABCDEFGHIJKLMNOP
+# Requesting reboot : http://192.168.x.x/RHBRKGIANLBJZTOA/userRpm/SysRebootRpm.htm?Reboot=Reboot
+- Device is restarting... Good bye =)
