@@ -5,7 +5,7 @@ echo
 echo 'arp-scan'
 arp-scan -l | cut -s -f 1,2 | sort -n | while read ipaddr macaddr
 do
-        echo -e "$macaddr\t$ipaddr\t$(resolveip $ipaddr 2>/dev/null | sed 's/.*is //' )"
+        echo -e "$macaddr\t$ipaddr\t$(host $ipaddr 2>/dev/null | sed -r -e 's/.*(\spointer|not found)\s*//' | tr '\n' ' ')"
 done
 
 
